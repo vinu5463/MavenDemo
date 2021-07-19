@@ -45,7 +45,6 @@ public class DemoTest {
 		Assert.assertEquals(2, b/a);
 
 		System.out.println("Division");
-		System.out.println("Added One more Line");
 	}
 
 }
