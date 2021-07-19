@@ -1,10 +1,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
- 
-<suite name="Maven Test Suite" verbose="1" >
-  <test name="Maven Testing">
-    <packages>
-      <package name="com.qa.tests.*"/>
-     
-   </packages>
- </test>
+
+<suite name="Maven Test Suite" verbose="1">
+
+	<listeners>
+		<listener
+			class-name="com.qa.listeners.TestAllureReportListener" />
+	</listeners>
+
+	 <test name="Maven Testing"> <packages> <package name="com.qa.tests.*"/> 
+		</packages> </test> 
+<!--  <test name="Maven Testing">
+		<classes>
+			<class name="com.qa.tests.DemoTest" />
+		</classes> 	
+
+	</test>-->
 </suite>
